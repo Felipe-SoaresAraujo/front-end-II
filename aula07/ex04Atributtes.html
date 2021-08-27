@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 07 - Atributtes</title>
+</head>
+<body>
+    <img src="image_hat.jpg" alt="Boné com logo JS" id="imagem">
+    <script>
+        // Selecionamos um elemento do HTML
+        let elemento = document.querySelector("#imagem");
+        // Consultamos se existe um atributo SRC
+        alert(elemento.hasAttribute("src")); // true
+
+        // Pedimos o valor do atributo
+        alert(elemento.getAttribute("src")); // image_hat.jpg
+
+        //Excluímos o valor do atributo
+        alert(elemento.removeAttribute("src"));
+
+        //Adicionamos o atributo com o seu valor
+        alert(elemento.setAttribute("src", "image_hat.jpg"))
+    </script>
+</body>
+</html>

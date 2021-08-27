@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesa de Trabalho - Eventos</title>
+</head>
+
+
+<body onpageshow="alert('Sua página foi carregada.')">
+    <form action="">
+        
+        <label for="text" onkeypress="pressEnter()">Digite um texto e pressione enter.</label>
+
+        <label for="email">E-mail</label>
+        <input type="email"><br>
+        
+        <label for ="password">Senha</label>
+        <input type="password">
+        <br><br>
+        
+        <button type="submit" id="btn1">Enviar</button>
+        <button type="reset">Cancelar</button>
+    </form>
+
+    <p onmouseover="mudarCorTexto(this, '#ffff', '#0000')" onmouseout="mudarCorTexto(this, '#0000', '#ffff')">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eveniet eaque itaque quo iure praesentium quis dignissimos, ad vero reprehenderit ut ab nobis, exercitationem voluptatibus in aspernatur necessitatibus culpa nihil?</p>
+    
+    <script src="./js/app.js"></script>
+    
+</body>
+</html>
+
+<!-- Objetivo
+Construir um formulário e alterar suas propriedades com JavaScript.
+
+Crie uma nova página HTML e adicione via JavaScript os seguintes elementos:
+
+Crie um formulário com campos de input e botões de submit e reset.
+Previna a página de ser recarregada quando houver o submit utilizando preventDefault().
+Mostre um alerta na página quando a tela terminar de ser carregada.
+Adicione uma cor a um texto quando o mouse ficar acima do mesmo e outra cor quando ele sair do mesmo.
+Faça um trecho de código que utilize algum evento de teclado, esse evento irá escrever o conteúdo do input em uma tag p e logo abaixo o número de vezes que esse evento foi chamado. Exemplo: <p>futebol</p> <p>7</p> . -->
